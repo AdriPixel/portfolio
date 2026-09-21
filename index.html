@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Persönliches Portfolio von Adrienn Szönyi">
+
+    <title>Meine Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="js/script.js" defer></script> 
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Adrienn <span>Szönyi</span> </a>
+
+        
+        <button class="menu-icon" id="menu-icon" aria-label="Menü öffnen" aria-expanded="false"
+            aria-controls="primary-nav">
+            <i class="bx bx-menu"></i>
+        </button>
+
+        <nav class="navbar" id="primary-nav">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Ausbildung</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1><span>Adrienn</span></h1>
+                <h3 class="text-animation">Fotografie · Reisen · Kreativität · Code</h3>
+            <p>
+            Ich liebe es, besondere Momente festzuhalten, neue Orte zu entdecken
+            und kreative Ideen umzusetzen. Fotografie und Reisen gehören genauso
+            zu mir wie meine wachsende Begeisterung für Webentwicklung und Code.     
+            </p>
+
+            <div class="countdown">
+                <p>🎃 Countdown bis Halloween 🎃</p>
+                <div id="countdown-timer"></div>
+            </div>
+            <div class="social-icons">
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+            </div>
+            <div class="button-group">
+    <a href="#portfolio" class="btn">Meine Projekte</a>
+    <a href="#contact" class="btn btn--outline">Kontakt</a>
+    </div>
+
+    </div>
+
+    <div class="home-img">
+    
+    </div>
+        </section>
+        <section class="education" id="education">
+            <h2 class="heading">Meine <span>Ausbildung</span></h2>
+            
+            <div class="timeline">
+            <span class="year">2026 - 2028</span>
+                <div class="entry">
+                <h3>Fachinformatikerin für Anwendungsentwicklung</h3>
+                <p>Umschulung mit IHK-Abschluss.</p>
+            </div>
+
+            <span class="year">10/2024 - 07/2025</span>
+            <div class="entry">
+                <h3>Robotik Seminar</h3>
+                <p>Programmierung mit Python und praktische Arbeit mit dem humanoiden Roboter NAO V6.</p>
+            </div>
+
+            <span class="year">09/2017 - 05/2018</span>
+            <div class="entry">
+                <h3>Online-Webdesign-Kurs</h3>
+                <p>Grundlagen in HTML und CSS.</p>
+            </div>
+        </div>
+        </section>
+        <section class="photography" id="photography">
+    <h2 class="heading">Meine <span>Fotografie</span></h2>
+
+    <div class="photo-grid">
+        <img src="images/photography/mountains-sunset.jpg" alt="Berglandschaft bei Sonnenuntergang">
+        <img src="images/photography/mountains-misty.jpg" alt="Berglandschaft im Nebel">
+        <img src="images/photography/bosphorus-sunset.jpg" alt="Sonnenuntergang am Bosporus">
+    </div>
+    </section>
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+    <img class="lightbox-image" id="lightbox-image" src="" alt="">
+</div>
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Mein <span>Portfolio</span></h2>
+            <div class="portfolio-grid">
+                <article class="card">
+                    <h3>Stabschrecken Welt</h3>
+                    <p>Eine einfache Webseite mit HTML und CSS.</p>
+                    <a href="#">Projekt ansehen</a>
+                </article>
+                <article class="card">
+                    <h3>Michael Olise Fanpage</h3>
+                    <p>Eine Fanpage über Michael Olise mit HTML und CSS.</p>
+                    <a href="#">Projekt ansehen</a>
+                </article>
+                <article class="card">
+                    <h3>Digitales Fotoalbum</h3>
+                    <p>Eine persönliche Sammlung meiner Reise- und Fotografieaufnahmen.</p>
+                    <a href="#">Projekt ansehen</a>
+                </article>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="heading">Kontakt <span>aufnehmen</span></h2>
+
+            <form action="#" method="post">
+                <label for="name">Dein Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Deine E-Mail:</label>
+                <input type="email" id="email" name="email">
+                <p>Wie hast du von mir erfahren?</p>
+                <input type="radio" id="google" name="source" value="google">
+                <label for="google">Google</label>
+                <input type="radio" id="socialmedia" name="source" value="socialmedia">
+                <label for="socialmedia">Social Media</label>
+                <label for="message">Deine Nachricht:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Nachricht senden</button>
+                <button type="reset">Zurücksetzen</button>
+            </form>
+
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
